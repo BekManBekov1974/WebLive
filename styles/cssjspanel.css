@@ -1,0 +1,173 @@
+::-webkit-scrollbar {
+    width: 8px;
+    height: 0px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px transparent; 
+    
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--theme-color);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background:  var(--theme-color); 
+  }
+.css-js-panel
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: #181B21;
+}
+.js-panel
+{
+   width: 80%;
+    height: 100%;
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: row;
+    scrollbar-width: thin;
+    transition: ease 0.2s;
+    font-size: 14px;
+}
+.js-item
+{
+    border-top: 2px solid var(--border-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    padding:5px 15px;
+    color:silver ;
+    text-align: left;
+    cursor: pointer;
+    transition: ease 0.1s;
+}
+.js-item:hover:not(.js-item-active)
+{
+    background-color: rgba(9,11,14, 0.5);
+}
+.js-item-active
+{
+    color:#11B7D4;
+    background-color: #090B0E;
+    border-top:2px solid var(--border-color);
+}
+.edit-button
+{
+    position: absolute;
+    right:4px;
+}
+
+
+.separator
+{
+    background-color: #111418;
+    height: 0px;
+}
+.add>svg,.run>svg
+{
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    align-self: center;
+    margin-left: 2px;
+    transform: scale(0.8);
+}
+.add{
+  border-left: 1px solid var(--border-color);
+  box-shadow:-5px 0px 5px rgba(9,11,14, 0.5);
+
+}
+
+.run
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.run
+{
+  font-size: 14px;
+  color: #525E6F;
+  transition: ease 0.2s;
+}
+.run:hover>path
+{
+ 
+  fill:var(--theme-color)
+}
+.run:hover>span
+{
+  color:var(--theme-color);
+}
+
+
+/* input frame */
+
+.cssjsframe
+{
+  font-family: Buttons;
+  visibility: hidden;
+  position: absolute;
+  background-color: rgba(28,32,39, 0.3);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 15;
+  font-size: 16px;
+}
+.inputframe
+{
+  background-color: #090B0E;
+  width: 300px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 25px;
+  border:1px solid var(--border-color);
+}
+.edit-frame
+{
+  background-color: #090B0E;
+  flex: 1;
+}
+
+
+.button-frame
+
+{
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+}
+
+.btn
+{
+  margin-left: 5px;
+text-align: center;
+  color: silver;
+  padding: 6px 20px;
+  min-width: 64px;
+  cursor: pointer;
+}
+.btn-ok{
+  color: #11B7D4;
+}
+.btn-cancel
+{
+  color: #AD1C18;
+}
+/* input frame */

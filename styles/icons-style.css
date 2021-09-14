@@ -1,0 +1,201 @@
+@font-face {
+    font-family: iconka;
+    src: url("../fonts/NotoSans-Regular.ttf");
+}
+
+.icons-container {
+    user-select: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    visibility: hidden;
+}
+
+.ic-con-show {
+    visibility: visible;
+}
+
+.icons-form 
+{
+    height: 640px;
+    background-color:#191D24;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+}
+.icons-form-show
+{
+    opacity: 1;
+}
+.icons-content
+{
+    border-top: 2px solid var(--theme-color);
+    height: 100%;
+    overflow-y: scroll;
+}
+.icons-table {
+    width: 600px;
+    border-collapse: collapse;
+}
+
+.icons-table td {
+    width: 64px;
+    height: 64px;
+    padding: 5px;
+}
+
+.icon {
+    color: #69788E;
+    padding: 5px;
+    text-align: center;
+    height: 100%;
+    width: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+ 
+}
+
+.icon:hover {
+    box-shadow: 0 0 0 2px var(--theme-color);
+    color: var(--theme-color);
+}
+
+.iconi {
+    font-size: 2em;
+  
+}
+
+[class*=" wl-youtube2"] {
+    font-size: 1.5em;
+}
+
+.datas {
+    
+    padding: 5px;
+    padding-bottom: 10px;
+}
+
+.icon-view {
+    width: 128px;
+    height: 128px;
+    border: 1px solid var(--border-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0D0F12;
+    color: #69788E;
+    cursor: pointer;
+    
+}
+
+.iw-light
+{
+    background-color: silver;
+    color:#0D0F12;
+}
+
+.datas {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.iconcha {
+    font-size: 5em;
+    transition: ease 0.1s;
+}
+
+.icon-data {
+    flex: 1;
+
+    width: 100%;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 15px;
+}
+
+.icon-data span {
+    font-family: iconka;
+    color: #0D0F12;
+}
+
+
+.icon-class-name >span {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.icon-unicode>span {
+    cursor: pointer;
+    margin-right: 5px;
+    font-size: 20px;
+}
+.operations
+{
+  
+    margin-top: 25px;
+}
+.op-button
+{
+    border-radius: 5px;
+    padding:5px;
+    cursor: pointer;
+    color:#69788E;
+    margin-top: 25px;
+    background-color: #0D0F12;
+    transition:ease 0.1s;
+}
+.op-button:hover
+{
+    color:var(--theme-color)
+}
+.tabbar
+{
+    float: left;
+    position: relative;
+}
+.tabbar a
+{
+    display: inline-block;
+    text-decoration: none;
+    padding: 3px 10px;
+    border:1px solid var(--border-color);
+    border-bottom: 0px;
+    cursor: pointer;
+    font-family: iconka;
+    color:silver;
+}
+.tabbar .active
+{
+    background-color: var(--theme-color);
+    color: black;
+}
+.animatsiya
+{
+    animation-name: AnimationIcon;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+}
+@keyframes AnimationIcon{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(720deg);
+    }
+}

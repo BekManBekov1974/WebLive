@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Sarlavha</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/main-style.css">
+  <link rel="stylesheet" href="./styles/jqx.base.css">
+  <link rel="stylesheet" href="./styles/editor.css">
+  <link rel="stylesheet" href="./styles/left-toolbar.css">
+  <link rel="stylesheet" href="./styles/splash.css">
+  <link rel="stylesheet" href="./styles/cssjspanel.css">
+  <link rel="stylesheet" href="./webliveicons/icomoon-ultimate-webfont.css">
+  <link rel="stylesheet" href="./webliveicons/wlstyle.css">
+  <link rel="stylesheet" href="./webliveicons/fwlstyle.css">
+  <link rel="stylesheet" href="./webliveicons/androidstyle.css">
+  <link rel="stylesheet" href="./webliveicons/linestyle.css">
+  <link rel="stylesheet" href="./webliveicons/iqlimstyle.css">
+  <link rel="stylesheet" href="./webliveicons/filesstyle.css">
+  <link rel="stylesheet" href="./styles/icons-style.css">
+  <link rel="stylesheet" href="./styles/Xabarnoma.css">
+  <link rel="stylesheet" href="./styles/link-style.css">
+  <link rel="stylesheet" href="./styles/tabbar.css">
+  <script src="./scripts/jquery.min.js"></script>
+  <script src="./scripts/jqxcore.js"></script>
+  <script src="./scripts/jqxsplitter.js"></script>
+  <script src="./scripts/Xabarnoma.js"></script>
+  <style id="root-colors">
+    :root {
+      --theme-color: #12CAEA;
+      --border-color: #000000;
+      --splash-colors: #12CAEA;
+      --background-color:#000000;
+      --widget-foni:#000000;
+      --split-top:#1e1e1e;
+      --split-left:#1e1e1e;
+      --split-back:#1e1e1e;
+      --tabbar-background:#1e1e1e;
+    }
+  </style>
+<body>
+<div class="splash-screen" id="splash-screen">
+    <div class="logo">
+      <div class="wl-logo">
+        <div class="wl-left">
+          <svg x="0px" y="0px" viewBox="0 0 448 512" preserveAspectRatio="none">
+            <polygon class="ss" points="304.3,102.1 177.8,256 304.3,409.9 334.2,360.7 249,256 334.2,151.3 " />
+          </svg>
+        </div>
+        <div class="wl-center">
+          <svg x="0px" y="0px" viewBox="0 0 448 512" preserveAspectRatio="none">
+            <path d="M149,197.3h22.5l18.9,80l19.7-80h16.1l19.4,80.3l19.3-80.3h22.5L259,314.7h-23.8l-17.2-72l-17.2,71.9h-23.7
+            L149,197.3z" />
+            <path d="M303.4,197.3h25.1v92H363v25.3h-59.7V197.3H303.4z" />
+          </svg>
+        </div>
+        <div class="wl-right">
+          <svg x="0px" y="0px" viewBox="0 0 448 512" preserveAspectRatio="none">
+            <polygon class="ss" points="207.7,409.9 334.2,256 207.7,102.1 177.8,151.3 263,256 177.8,360.7 " />
+          </svg>
+        </div>
+
+      </div>
+      <span class="dd" id="dd">WebLive</span>
+      <div class="progressbar" id="progress">
+        <div class="indicator" id="indicator"></div>
+      </div>
+      <div class="splash-footer">
+        <span style="z-index: 10;">© Quvondiqov Allayor | JDPI 2020</span>
+      </div>
+
+    </div>
+  
+  </div>
+  <div class="link-frame" id="links">
+    <div class="link-window"  >
+      <span class="link-title">KUTUBXONA</span>
+      <div class="title-line"></div>
+      <div class="links">
+        <ul>
+          <li><span data-name="androidstyle.css">Android Ikonkalar</span></li>
+          <li><span data-name="filesstyle.css">Fayl Ikonkalar</span></li>
+          <li><span data-name="fwlstyle.css">FontAwesome Ikonkalar</span></li>
+          <li><span data-name="icomoon-ultimate-webfont.css">Icomoon Ikonkalar</span></li>
+          <li><span data-name="iqlimstyle.css">Iqlim Ikonkalar</span></li>
+          <li><span data-name="linestyle.css">Chiziqli Ikonkalar</span></li>
+          <li><span data-name="wlstyle.css">Web Live Ikonkalar</span></li>
+          <hr>
+          <li><span data-name="bootstrap.css─bootstrap.js">Bootstrap</span></li>
+          <li><span data-name="chart.css─chart.js">Chart.js</span></li>
+          <li><span data-name="Materialize.css─Materialize.js">Materialize</span></li>
+          <hr>
+          <li><span data-name="animate.css">Animate</span></li>
+          <li><span data-name="create.min.js">Create</span></li>
+          <li><span data-name="easeljs.min.js">easelJS </span></li>
+          <li><span data-name="fabric.min.js">Fabric </span></li>
+          <li><span data-name="jQuery-3.5.1.js">Jquery</span></li>
+          <li><span data-name="MooTools-1.6.0.js">MooTools </span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="HomePage">
+    <div class="HomeContent">
+
+    </div>
+  </div>
+  <input type="text" value="Salom" id="clipboard">
+  <!---Alert formasi-->
+  <div class="alert-frame" id='alert-frame'>
+  </div>
+  <!---Alert formasi-->
+  <!--Iconcalar oynasi-->
+  <div class="icons-container" id="ic-container">
+    <div class="icons-form">
+      <i class="wl-cross op-button" id="close-icons-form"
+        style="align-self: flex-end; position: absolute; margin-top: 0;"></i>
+      <div class="datas">
+        <div class="icon-view iw-light">
+          <i class="iconcha fwl-gears" id="big-icon">
+
+          </i>
+        </div>
+        <div class="icon-data" id="id-data">
+          <div class="icon-class-name" id="ic-cl-name">
+            <span id="icon-name">fwl-gears</span><i class="op-button fwl-clone"
+              style="font-size: 18px; margin-left: 10px;background-color: transparent;" id="nameCopy" data-tooltip="Klass nomini nusxalash"></i>
+          </div>
+          <div class="icon-unicode" id="ic-unicode">
+            <span id="icon-unicode">\f002</span><i class="op-button fwl-clone"
+              style="font-size: 16px; margin-left: 10px;background-color: transparent;" id="unicodeCopy" data-tooltip="Ikonka unicode ni nusxalash"></i>
+          </div>
+
+          <div class="operations">
+            <i class="op-button wl-undo" id="wl-undo" data-tooltip="Soat strelkasiga qarama qarshi 90 gradusga aylantirish"></i>
+            <i class="op-button wl-redo" id="wl-redo" data-tooltip="Soat strelkasi bo'yicha 90 gradusga aylantirish"></i>
+            <i class="op-button wl-contrast" id='contrast' data-tooltip="Kontrastni sozlash"></i>
+            <i class="op-button wl-heart" id="add-favourite" data-tooltip="Sevimlilar ro'yxatiga qo'shish"></i>
+            <i class="op-button wli-play3" id="animate-icon" data-tooltip="Aylantirish"></i>
+            <div class="qidirishBloki">
+              <input type="text" placeholder="Qidirish" id="qidir">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tabbar">
+        <a class="tab" onclick='ViewFavourites()'>Sevimlilar</a>
+        <a class="tab active" id="wl">Icomoon</a>
+        <a class="tab" id="fwl">FontAwesome</a>
+        <a class="tab" id="android">Android</a>
+        <a class="tab" id="lines">Chiziqli</a>
+        <a class="tab" id="fsystem">Fayl sistema</a>
+        <a class="tab" id="iqlim">Iqlim</a>
+      </div>
+      
+      <div class="icons-content">
+        
+        <table id="icons-table" class="icons-table">
+
+        </table>
+      </div>
+    </div>
+  </div>
+  <!--Iconcalar oynasi-->
+  <div class="main-overlay">
+
+    <div class="header" style="overflow: hidden;text-align: center;">
+      <svg x="0px" y="0px" viewBox="0 0 448 263.1" preserveAspectRatio="none" style="width: 32px;margin:0px 5px;">
+        <path
+          d="M110.7,0L0,131.6l110.7,131.6l26.2-42.1l-74.5-89.5l74.6-89.5L110.7,0z M337.3,0l-26.2,42.1l74.5,89.5
+	l-74.5,89.5l26.2,42.1L448,131.6L337.3,0z M130.4,81.4h19.7l16.5,68.4l17.2-68.4h14.1l17,68.7l16.9-68.7h19.7l-24.9,100.4h-20.8
+	l-15.1-61.6l-15.1,61.5H155L130.4,81.4z M265.5,81.4h22V160h30.2v21.6h-52.2L265.5,81.4L265.5,81.4z M110.7,0.9L0,132.4L110.7,264
+	l26.2-42.1l-74.5-89.5l74.6-89.5L110.7,0.9z M337.3,0.9l-26.2,42.1l74.5,89.5l-74.5,89.5l26.2,42.1L448,132.4L337.3,0.9z" />
+      </svg>
+      <div class="main-menu" id="mainmenu">
+        <div class="menu-item it" id="menuitem"><span>Menyu</span>
+          <div class="menyu-content">
+            <ul class="menu-items">
+              <li id="newProject">Yangi loyiha</li>
+              <li>Loyihani saqlash</li>
+              <li>Loyihani export qilish</li>
+              <li>Loyihani yopish</li>
+              <li>Dasturdan chiqish</li>
+            </ul>
+          </div>
+        </div>
+        <div class="menu-item it1"><span>Tahrir</span>
+          <div class="menyu-content">
+            <ul class="menu-items">
+              <li>Oxirgi amalni bekor qilish</li>
+              <li>Oxirgi amalga qaytish</li>
+              <li>Nusxalash</li>
+              <li>Qiriqib olish</li>
+              <li>Joylashtirish</li>
+              <li>Qidirish</li>
+              <li>Almashtirish</li>
+              <li>Joriy qatorni komentlash</li>
+              <li>Qatorlar blokini komentlash</li>
+            </ul>
+          </div>
+        </div>
+        <div class="menu-item"><span>Mavzu</span>
+          <div class="menyu-content">
+            <ul class="menu-items" id="theme-items">
+              
+            </ul>
+          </div>
+        </div>
+        
+        <div class="menu-item"><span>Ko'rinish</span>
+          <div class="menyu-content">
+            <ul class="menu-items">
+              <li id="wl-vertical-view">Vertikal holatda</li>
+              <li id="wl-horizontal-view">Gorizontal holatda</li>
+            </ul>
+          </div>
+        </div>
+        <div class="menu-item"><span>Yordam</span></div>
+      </div>
+      <div class="window-title">
+        <i class="wli-circle-small change-mode"></i><span class="title">Birinchi loyiha - WebLive</span>
+      </div>
+      <div class="mainbuttons">
+        <div class="minimize" id="minimize">
+          <i class="wli-minus3 title-icons minimize"></i>
+        </div>
+        <div class="maximize" id="maximize">
+          <i class="wli-checkbox-unchecked title-icons maximize"></i>
+        </div>
+        <div class="close" id='closewindow'>
+          <i class="title-icons wli-cross2 close"></i>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="work-area">
+      <div class="navbar" id="navbar">
+
+        <svg id="htmlEdit" x="0px" y="0px" viewBox="0 0 448 512" preserveAspectRatio="none" class="code-buttons" data-tooltip="HTML (Hyper Text Markup Language)">
+          <path class="stt" d="M417,41.5H31l42.9,386.1L224,470.5l150.1-42.9L417,41.5z M327,172.3h-163l4.3,47.2h156.6l-10.7,137.3L224,384.7
+    l0,0l-85.8-27.9l-4.3-55.8h42.9l2.1,21.4l49.3,10.7l47.2-10.7l4.3-60.1H127.5l-10.7-135.1h214.5L327,172.3z" />
+
+        </svg>
+
+        <svg id="cssEdit" x="0px" y="0px" viewBox="0 0 448 512" preserveAspectRatio="none" class="code-buttons" data-tooltip="CSS (Cascading Style Sheets)">
+          <path class="st1" d="M31,41.5l42.9,386.1l150,42.9l150.3-42.9L417,41.5H31z M325.4,220.6l-8.2,133.9l-92.6,30.2L132,354.5l-3.5-64
+	h46.9l1.2,29.1l48,16.3l48.1-16.3l3.5-52.4H173.1l-2.3-46.6h107.8L282,174H120.3l-3.5-46.5h214.5L325.4,220.6z" />
+        </svg>
+
+
+        <svg id="jsEdit" x="0px" y="0px" viewBox="0 0 448 512" preserveAspectRatio="none" class="code-buttons" data-tooltip="JS (JavaScript)">
+          <path class="st2" d="M224,41.5H31l36.5,386.1L224,470.5l156.6-42.9L417,41.5H224z M322.7,361.1L224,389l-98.7-27.9l-6.4-72.9h49.3
+	l4.3,36.5l53.6,15l53.6-15l6.4-60.1H224H116.8l0,0l12.9-143.7H224h100.8l10.7,75.1h-49.3l-2.1-27.9H224h-53.6l-2.1,49.3H224h111.5
+	L322.7,361.1z" />
+        </svg>
+
+        <div class="ajratuvchi">
+
+        </div>
+        
+       
+        <i class="wl-images navbar-icons" id="wl-image-res" data-tooltip="Ikonkalar oynasini ochish"></i>
+        <i class="wl-link navbar-icons" id="dialog" data-tooltip="Linklar oynasini ochish"></i>
+        <i class="wli-drawer3 navbar-icons" id="wl-katalog-ochish" data-tooltip="Joriy loyiha katalogini ochish"></i> 
+        <div class="ajratuvchi" style="margin-top: 15px;">
+
+        </div>
+        <i class="wli-presentation navbar-icons pactive" id="HideResult" data-tooltip="O'ng tomon Brauzerni yashirish | ko'rsatish"></i>
+        <div class="navbar-bottom-buttons">
+          <div class="ajratuvchi"></div>
+          <i class="fwl-gears navbar-icons" data-tooltip="Sozlamalar oynasini ochish"></i>
+          <i class="wl-info navbar-icons" data-tooltip="Dastur haqida oynasini ochish"></i>
+        </div>
+      </div>
+      <div class="full-result" id="FullRes">
+        <div class="frame-bar">
+          <i class="wl-arrow-left2" id="fr-back"></i>
+          <i class="wl-arrow-right2" id="fr-forvard"></i>
+          <i class="wl-spinner11" id="fr-refresh"></i>
+          <div class="addressbar">
+            <span class="ResultTitle" id="frestitle"></span>
+          </div>
+          <i class="wli-shrink" id="fr-minimize"></i>
+          <i class="wl-zoom-in"></i>
+          <i class="wl-zoom-out"></i>
+          <i class="wli-cross2" id="fr-close"></i>
+        </div>
+        <iframe id="fr-natija-frame">
+        </iframe>
+      </div>
+      
+      <div class="codeandnatija">
+        <div id='splitter'>
+          <div class="html" id="codeFrame">
+            <div class="tabbar">
+              <ul class="tabul" id="tabul">
+                 
+              </ul>
+              <ul class="tabul" id="tabul1">
+                
+              </ul>
+              <ul class="tabul" id="tabul2">
+              
+              </ul>
+              <div class="addbar" id="addFile" data-tooltip="Yangi fayl qo'shish">
+                <i class="wli-plus3"> <span>HTML</span></i>
+              </div>
+          </div>
+            <iframe id="codeframe" class="code-frame"></iframe>
+          </div>
+          <div class="result-frame" id="result-frame">
+            <div class="frame-bar">
+              <i class="wl-arrow-left2" id="history-back" data-tooltip="Sahifa orqaga"></i>
+              <i class="wl-arrow-right2" id="history-forvard" data-tooltip="Sahifa oldinga"></i>
+              <i class="wl-spinner11" id="refresh-frame" data-tooltip="Sahifani yangilash"></i>
+              <div class="addressbar">
+                <span class="ResultTitle" id="restitle"></span>
+              </div>
+              <i class="wli-enlarge" id="fullscreen" data-tooltip="Sahifani to'liq ekranda ko'rsatish"></i>
+              <i class="wl-zoom-in" data-tooltip="Sahifani yaqinlashtirish"></i>
+              <i class="wl-zoom-out" data-tooltip="Sahifani uzoqlashtirish"></i>
+            </div>
+            <iframe id="natija-frame">
+            </iframe>
+            <div class="console" id="console">
+              <div class="console-titlebar">
+                <span class="console-title">JavaScript konsol</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="tooltip" id="tooltip">
+        Dastur ishga tayyor
+      </div>
+    </div>
+  </div>
+  <script>
+    require('./render.js')
+  </script>
+  <script src="./scripts/loader.js"></script>
+  <script src="./scripts/onload.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "weblive",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "npm build & electron ."
+  },
+  "author": "Quvondiqov Allayor",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^14.0.1",
+    "electron-packager": "^15.2.0",
+    "require": "^2.4.20"
+  },
+  "dependencies": {
+    "monaco-editor": "^0.20.0"
+  },
+  "description": ""
+}

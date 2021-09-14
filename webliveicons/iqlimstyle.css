@@ -1,0 +1,171 @@
+@font-face {
+  font-family: 'iqlim';
+  src:  url('fonts/iqlim.eot?78ckf1');
+  src:  url('fonts/iqlim.eot?78ckf1#iefix') format('embedded-opentype'),
+    url('fonts/iqlim.ttf?78ckf1') format('truetype'),
+    url('fonts/iqlim.woff?78ckf1') format('woff'),
+    url('fonts/iqlim.svg?78ckf1#iqlim') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="wlm-"], [class*=" wlm-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'iqlim' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wlm-sunrise:before {
+  content: "\e900";
+}
+.wlm-sun:before {
+  content: "\e901";
+}
+.wlm-moon:before {
+  content: "\e902";
+}
+.wlm-sun1:before {
+  content: "\e903";
+}
+.wlm-windy:before {
+  content: "\e904";
+}
+.wlm-wind:before {
+  content: "\e905";
+}
+.wlm-snowflake:before {
+  content: "\e906";
+}
+.wlm-cloudy:before {
+  content: "\e907";
+}
+.wlm-cloud:before {
+  content: "\e908";
+}
+.wlm-weather:before {
+  content: "\e909";
+}
+.wlm-weather1:before {
+  content: "\e90a";
+}
+.wlm-weather2:before {
+  content: "\e90b";
+}
+.wlm-lines:before {
+  content: "\e90c";
+}
+.wlm-cloud1:before {
+  content: "\e90d";
+}
+.wlm-lightning:before {
+  content: "\e90e";
+}
+.wlm-lightning1:before {
+  content: "\e90f";
+}
+.wlm-rainy:before {
+  content: "\e910";
+}
+.wlm-rainy1:before {
+  content: "\e911";
+}
+.wlm-windy1:before {
+  content: "\e912";
+}
+.wlm-windy2:before {
+  content: "\e913";
+}
+.wlm-snowy:before {
+  content: "\e914";
+}
+.wlm-snowy1:before {
+  content: "\e915";
+}
+.wlm-snowy2:before {
+  content: "\e916";
+}
+.wlm-weather3:before {
+  content: "\e917";
+}
+.wlm-cloudy1:before {
+  content: "\e918";
+}
+.wlm-cloud2:before {
+  content: "\e919";
+}
+.wlm-lightning2:before {
+  content: "\e91a";
+}
+.wlm-sun2:before {
+  content: "\e91b";
+}
+.wlm-moon1:before {
+  content: "\e91c";
+}
+.wlm-cloudy2:before {
+  content: "\e91d";
+}
+.wlm-cloud3:before {
+  content: "\e91e";
+}
+.wlm-cloud4:before {
+  content: "\e91f";
+}
+.wlm-lightning3:before {
+  content: "\e920";
+}
+.wlm-rainy2:before {
+  content: "\e921";
+}
+.wlm-rainy3:before {
+  content: "\e922";
+}
+.wlm-windy3:before {
+  content: "\e923";
+}
+.wlm-windy4:before {
+  content: "\e924";
+}
+.wlm-snowy3:before {
+  content: "\e925";
+}
+.wlm-snowy4:before {
+  content: "\e926";
+}
+.wlm-weather4:before {
+  content: "\e927";
+}
+.wlm-cloudy3:before {
+  content: "\e928";
+}
+.wlm-lightning4:before {
+  content: "\e929";
+}
+.wlm-thermometer:before {
+  content: "\e92a";
+}
+.wlm-compass:before {
+  content: "\e92b";
+}
+.wlm-none:before {
+  content: "\e92c";
+}
+.wlm-Celsius:before {
+  content: "\e92d";
+}
+.wlm-Fahrenheit:before {
+  content: "\e92e";
+}
+.wlm-maps_ugc:before {
+  content: "\e92f";
+}

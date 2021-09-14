@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" data-name="vs/editor/editor.main"
+        href="../node_modules/monaco-editor/min/vs/editor/editor.main.css" />
+    <link rel="stylesheet" href="./dizayn.css">
+    <link rel="stylesheet" href="../styles/jqx.base.css">
+    <script src="../scripts/jquery.min.js"></script>
+    <script src="../scripts/jqxcore.js"></script>
+    <script src="../scripts/jqxsplitter.js"></script>
+    <style id="splitColors">
+        :root
+        {
+            --split-top:#1e1e1e;
+            --split-left:#1e1e1e;
+            --split-back:#1e1e1e;
+        }
+    </style>
+</head>
+
+<body id="editor">
+ 
+    <div id="split">
+        <div>
+            <div id="left-split">
+                <div class="editor-frame-html" id="edFrame">
+    
+                </div>
+                <div class="editor-frame-css" id="cedFrame">
+            
+                </div>
+            </div>
+        </div>
+       <div>
+        <div id="right-split">
+            
+            <div class="editor-frame-js" id="jedFrame">
+    
+            </div>
+            <div class="editor-frame-p5" id="pedFrame">
+        
+            </div>
+        </div>
+       </div>
+       
+        
+    </div>
+    
+
+    <script>
+        var require = { paths: { vs: '../node_modules/monaco-editor/min/vs' } };
+    </script>
+    <script src="../node_modules/monaco-editor/min/vs/loader.js"></script>
+    <script src="../node_modules/monaco-editor/min/vs/editor/editor.main.nls.js"></script>
+    <script src="../node_modules/monaco-editor/min/vs/editor/editor.main.js"></script>
+    <script src="./editormonaco.js"></script>
+</body>
+
+</html>
